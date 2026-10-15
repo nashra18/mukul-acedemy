@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins, Inter } from "next/font/google";
+// import {TransitionProvider} from "@/provider/TransitionProvider"
  
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -25,7 +26,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        {/* <TransitionProvider>{children}</TransitionProvider> */}
+        
+        </body>
     </html>
   );
 }

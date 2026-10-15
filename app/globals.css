@@ -59,10 +59,6 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 img {
   max-width: 100%;
@@ -84,4 +80,23 @@ img {
 :focus-visible {
   outline: 2px solid var(--color-sky);
   outline-offset: 2px;
+}
+
+
+.transition-grid{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+  overflow: hidden;
+
+}
+
+.transition-block{
+  position: absolute;
+  background-color: aqua;
+  will-change: transform;
 }
